@@ -25,3 +25,8 @@ def new_user(user='',host=''):
      sudo('usermod  -a -G admin %s' % user)
      sudo('echo "%s:password" | chpasswd' % user)
 
+
+ fab new_admin:host=horname    /* creating a group with sudo privilege.
+
+ fab new_user:user=username,password=yourpassword / * new user creation
+ 
